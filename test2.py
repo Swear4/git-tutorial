@@ -9,12 +9,12 @@ def two_sum(nums, target):
     Returns:
     List[int]: Indices of the two numbers.
     """
-    num_to_index = {}
+    Example = {}
     for i, num in enumerate(nums):
         complement = target - num
         if complement in num_to_index:
-            return [num_to_index[complement], i]
-        num_to_index[num] = i
+            return [Example[complement], i]
+        Example[num] = i
     return []
 
 # Example usage:
